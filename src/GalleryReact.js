@@ -6,7 +6,7 @@ const GalleryReact = () => {
   const [items,setItems] = useState(Menu)
   const filterItem=(cateItem)=>{
    const updatedItems=Menu.filter((curele)=>{
-       return curele.category === cateItem;
+       return curele.category == cateItem;
 
    });
    setItems(updatedItems);
